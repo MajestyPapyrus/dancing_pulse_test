@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <script src="librairies/p5js/p5.min.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+
+  <script src="yesheartball.js"></script>
+  <script src="yeshearttube.js"></script>
+  <script src="yesheartsketch.js"></script>
+  <script src="yeshearttriangle.js"></script>
+  <link rel="stylesheet" type="text/css" href="yesheart.css">
+</head>
+
+<body>
+  <div id="loading-screen" class="loading-screen">
+    <div id="heartbeat-line-container">
+      <img src="médias/heartbeat line.png" id="heartbeat-line" />
+      <img src="médias/heart-cache.png" id="heart-image" class="pulse" />
+    </div>
+    <div id="loading-messages"></div>
+    <div id="loading-tips"></div>
+  </div>
+
+  <div class="container">
+    <div class="logo-and-heart">
+      <img id="orangeHeart" src="médias/heart-orange.png" alt="Orange Heart">
+      <a href="index.html" class="logo">Dancing<b> Pulse</b></a>
+    </div>
+    <div class="title-container">
+      <h1 id="canvas-title">Visualization of your heartbeat your soul</h1>
+    </div>
+    <div class="content-wrapper">
+      <div class="data-section">
+        <div id="heartbeat">Heartbeat BPM: <span id="heartbeat-value"></span></div>
+        <div id="soul-color">Color of Your Soul: <span id="soul-color-value"></span></div>
+        <div id="current-emotion">Current Emotion: <span id="emotion-value"></span></div>
+        <div id="soul-age">Soul Age: <span id="soul-age-value"></span></div>
+        <div id="karmic-debt">Karmic Debt: <span id="karmic-debt-value"></span></div>
+      </div>
+    </div>
+    
+    <button id="analyze-again" onclick="window.location.reload();">Analyze Again</button>
+  </div>
+  <div id="notification-box" class="notification-box">
+    No heartbeat detected, try again later.
+  </div>
+</body>
+
+</html>
